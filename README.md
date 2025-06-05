@@ -9,7 +9,9 @@ Ignicao Digital é uma landing page moderna e responsiva voltada para divulgar u
 
 ## 📸 Prévia
 
-![preview](./public/img/preview.jpg) <!-- Substitua pelo caminho real da imagem ou use uma URL -->
+![Descrição da imagem](https://drive.google.com/uc?export=view&id=1dKWDab3hntEVQxOs8uHw3UTIgpsN3hnm)
+
+
 
 ---
 
