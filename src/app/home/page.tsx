@@ -35,18 +35,18 @@ function HomePage() {
                  bg-[url('/img/device.webp')] md:bg-[url('/img/bg.webp')]"
     >
       <motion.div
-        className="
-          w-[90%] md:w-[60%] lg:w-[50%] xl:w-[40%] 2xl:w-[35%]
-          h-[80%]
-          mt-[25%] md:mt-[8%] lg:mt-[6%] 2xl:mt-[10%]
-          ml-[5%] lg:ml-[8%] 2xl:ml-[10%]
-          flex flex-col items-center justify-center gap-8
-        "
-        initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <div className="w-full h-auto md:h-[20%] flex items-center justify-start">
+  className="
+    w-[90%] md:w-[60%] lg:w-[50%] xl:w-[40%] 2xl:w-[35%]
+    h-[70%]
+     md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 
+    ml-[5%] lg:ml-[8%] 2xl:ml-[10%]
+    flex flex-col items-center justify-center gap-8
+  "
+  initial={{ opacity: 0, y: 60 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
+        <div className="w-full h-auto md:h-[20%] flex items-center justify-start mt-[20%] ">
           <h1
             className="
             text-white
