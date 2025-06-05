@@ -1,10 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import {
-  DollarSign,
-  TrendingUp,
-  Briefcase,
-} from "lucide-react";
+import { DollarSign, TrendingUp, Briefcase } from "lucide-react";
+// Importação de toast não é mais necessária aqui
+// import { toast } from "sonner"; 
+
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -15,12 +14,18 @@ const cardVariants = {
   }),
 };
 
+// A função handleClick e o toast foram removidos,
+// pois a navegação será feita diretamente pelo href.
+// const handleClick = () => {
+//     toast.success("Inscrição confirmada com sucesso!");
+// };
+
 function Eventos() {
   return (
     <section className="w-full min-h-[90vh] flex flex-col items-center justify-center px-4 py-10 bg-[#0f0f0f] text-white font-sans text-center overflow-hidden">
       {/* Cards Container */}
       <div className="flex flex-wrap justify-center gap-6 mb-10">
-        {[ // Conteúdo dos cards como array para facilitar animação com index
+        {[
           {
             icon: <DollarSign className="text-orange-500 w-7 h-7" />,
             title: "Aspirantes a Empreendedor",
@@ -62,7 +67,8 @@ function Eventos() {
 
       {/* Botão CTA */}
       <motion.a
-        href="#inscricao"
+        // O onClick foi removido, pois o href cuidará da navegação
+        href="#inscricao" // Este href aponta para o ID da seção de formulário na HomePage
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}

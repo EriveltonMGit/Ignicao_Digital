@@ -1,5 +1,6 @@
 import Sobre from "./aboult/page";
 import FaixaRodape from "./components/ui/faixa";
+import CookieSettings from "./components/ui/toast";
 import Descricao from "./description/page";
 import Eventos from "./events/page";
 import Footer from "./footer/page";
@@ -14,6 +15,7 @@ export default function Home() {
       <Descricao></Descricao>
       <Eventos></Eventos>
       <Footer></Footer>
+      <CookieSettings></CookieSettings>
     </>
   );
 }

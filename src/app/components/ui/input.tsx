@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
+import { toast } from "sonner"; // ✅ importa o toast
 import "react-phone-input-2/lib/style.css";
 
 interface InputSelectProps {
@@ -15,11 +16,21 @@ const InputSelect: React.FC<InputSelectProps> = ({
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("55");
 
-  const inputHeight = 48; // altura fixa para ambos inputs
+  const inputHeight = 48;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!email || !telefone || telefone === "55") {
+      toast.error("Preencha todos os campos corretamente.");
+      return;
+    }
+
     if (onSubmit) onSubmit({ email, telefone });
+
+    // toast.success("Inscrição realizada com sucesso!");
+    // setEmail("");
+    // setTelefone("55");
   };
 
   return (
@@ -81,7 +92,6 @@ const InputSelect: React.FC<InputSelectProps> = ({
           enableAreaCodes={true}
           countryCodeEditable={false}
         />
-        {/* Placeholder customizado */}
         {(!telefone || telefone === "55") && (
           <span
             style={{
@@ -95,7 +105,7 @@ const InputSelect: React.FC<InputSelectProps> = ({
               userSelect: "none",
             }}
           >
-            (99) 99999-9999
+            (11) 96123-4567
           </span>
         )}
       </div>
