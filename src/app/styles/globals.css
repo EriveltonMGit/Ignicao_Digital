@@ -1,0 +1,26 @@
+:root {
+  --color-button: #ff6600;
+  --color-bg: #0e0e0e;
+  --font-main: "Baskervville", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: white;
+}
+
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-animation {
+  animation: floatUpDown 20s ease-in-out infinite;
+  left: 1%;
+}
