@@ -1,4 +1,3 @@
-// HomePage.tsx
 "use client";
 
 import { motion } from "framer-motion";
@@ -19,20 +18,20 @@ function HomePage() {
       >
         {/* Aqui começa o conteúdo animado */}
         <motion.div
-          className="w-[45%] h-[80%] mt-[5%] ml-[5%] flex flex-col items-center justify-around"
+          className="w-[90%] md:w-[45%] h-[80%] mt-[15%] md:mt-[5%] ml-[5%] flex flex-col items-center justify-around"
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="w-full h-[20%] flex items-center justify-start">
-            <h1 className="text-white text-3xl uppercase font-bold">
+          <div className="w-full h-auto md:h-[20%] flex items-center justify-start">
+            <h1 className="text-white text-4xl md:text-4xl lg:text-4xl xl:text-4xl uppercase font-bold">
               As inovações e avanços mais recentes do marketing digital
             </h1>
           </div>
 
-          <div className="w-full h-[10%]">
+          <div className="w-full h-auto md:h-[10%]">
             <p
-              className="text-gray-400"
+              className="text-gray-400 text-2xl md:text-base"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
               Que estão gerando milhões em vendas na internet, totalmente ao seu
@@ -40,24 +39,26 @@ function HomePage() {
             </p>
           </div>
 
-          <div className="w-full h-[10%] flex flex-col gap-1">
+          <div className="w-full h-auto md:h-[10%] flex flex-col gap-1">
             <p
-              className="text-white font-bold flex items-center gap-2"
+              className="text-white text-sm md:text-base lg:text-lg xl:text-xl font-bold flex items-start md:items-center gap-2"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
-              <Calendar className="w-5 h-5 text-[var(--color-button)]" />
-              Dia 18/04/23 (terça-feira) | 20h (horário de Brasília)
+              <Calendar className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 text-[var(--color-button)] flex-shrink-0 mt-1 md:mt-0" />
+              <span>
+                Dia 18/04/23 (terça-feira) | 20h (horário de Brasília)
+              </span>
             </p>
             <p
-              className="text-white font-bold flex items-center gap-2"
+              className="text-white text-sm md:text-base lg:text-lg xl:text-xl font-bold flex items-start md:items-center gap-2"
               style={{ fontFamily: "var(--font-montserrat)" }}
             >
-              <MousePointer2 className="w-5 h-5 text-[var(--color-button)] cursor-pointer" />
-              As aulas são 100% online e gratuitas
+              <MousePointer2 className="w-5 h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 text-[var(--color-button)] cursor-pointer flex-shrink-0 mt-1 md:mt-0" />
+              <span>As aulas são 100% online e gratuitas</span>
             </p>
           </div>
 
-          <div className="w-full h-[35%] flex flex-col gap-1">
+          <div className="w-full h-auto md:h-[35%] flex flex-col gap-1">
             <InputSelect onSubmit={handleFormSubmit} />
           </div>
         </motion.div>

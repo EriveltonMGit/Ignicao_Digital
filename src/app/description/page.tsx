@@ -18,14 +18,14 @@ function Descricao() {
   };
 
   return (
-    <section className="w-full h-[100vh] flex items-center justify-around px-5">
-      {/* Imagem com animação */}
+    <section className="w-full min-h-[100vh] md:h-[100vh] flex flex-col md:flex-row items-center justify-center md:justify-around px-5 py-10 md:py-0">
+      {/* Imagem com animação - Moved to top on mobile */}
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeUp}
-        className="w-[45%] bg-cover relative overflow-hidden h-[70%] flex items-center justify-center"
+        className="w-full md:w-[45%] bg-cover relative overflow-hidden h-[40vh] md:h-[70%] flex items-center justify-center order-1 md:order-none mb-8 md:mb-0"
       >
         <img
           src="/img/perfil-1.png"
@@ -36,7 +36,7 @@ function Descricao() {
 
       {/* Texto com animações em cascata */}
       <motion.div
-        className="border border-[var(--color-button)] rounded-lg bg-cover w-[45%] h-[70%] flex items-start justify-around flex-col p-5"
+        className="border border-[var(--color-button)] rounded-lg bg-cover w-full md:w-[45%] h-auto md:h-[70%] flex items-start justify-around flex-col p-5 order-2 md:order-none"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -44,7 +44,7 @@ function Descricao() {
       >
         <motion.h1
           variants={fadeUp}
-          className="text-white font-bold text-3xl uppercase"
+          className="text-white font-bold text-2xl md:text-3xl uppercase mb-4 md:mb-0"
           style={{ fontFamily: "var(--font-main)" }}
         >
           Erico e Hugo Rocha
@@ -59,7 +59,7 @@ function Descricao() {
           <motion.p
             key={i}
             variants={fadeUp}
-            className="text-white text-sm"
+            className="text-white text-sm mb-4 last:mb-0"
             style={{ fontFamily: "var(--font-montserrat)" }}
           >
             {text}
