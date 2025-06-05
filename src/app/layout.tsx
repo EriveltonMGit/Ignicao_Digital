@@ -29,7 +29,7 @@ export default function RootLayout({
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
 
-        {/* Importando fontes externas */}
+        {/* Importando fontes externas    */}
         <link
           href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap"
           rel="stylesheet"
