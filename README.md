@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Ignicao Digital
 
-## Getting Started
+[🔗 Acesse o site](https://ignicaodigital.netlify.app/)  
+[📁 Repositório no GitHub](https://github.com/EriveltonMGit/Ignicao_Digital)
 
-First, run the development server:
+Ignicao Digital é uma landing page moderna e responsiva voltada para divulgar um evento gratuito sobre marketing digital. O projeto foi desenvolvido com foco em performance, acessibilidade e design adaptado para diferentes dispositivos, especialmente pensado para impactar visualmente os visitantes.
+
+---
+
+## 📸 Prévia
+
+![preview](./public/img/preview.jpg) <!-- Substitua pelo caminho real da imagem ou use uma URL -->
+
+---
+
+## 📚 Funcionalidades
+
+- ✅ Interface moderna com **animações suaves (Framer Motion)**
+- ✅ **Formulário de inscrição** com campos de e-mail e telefone
+- ✅ Design responsivo: compatível com mobile, tablet e desktop
+- ✅ Layout ajustado para telas grandes e pequenas com Tailwind CSS
+- ✅ Ícones intuitivos com **Lucide Icons**
+- ✅ Otimizado com **Next.js App Router** e suporte a SSR
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Tecnologia       | Descrição                                     |
+|------------------|-----------------------------------------------|
+| **Next.js**      | Framework React para aplicações modernas      |
+| **Tailwind CSS** | Estilização com utilitários responsivos       |
+| **Framer Motion**| Animações suaves e declarativas               |
+| **Lucide-react** | Ícones modernos e acessíveis                  |
+| **Netlify**      | Deploy rápido e simples da aplicação          |
+
+---
+
+## 🧪 Como Executar Localmente
+
+1. Clone o repositório:
 
 ```bash
+git clone https://github.com/EriveltonMGit/Ignicao_Digital.git
+cd Ignicao_Digital
+
+2.  Instale as dependências:
+npm install
+
+3.  Rode o projeto:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📁 Estrutura do Projeto
+Ignicao_Digital/
+├── public/
+│   └── img/                # Imagens utilizadas no layout
+├── src/
+│   ├── components/
+│   │   └── ui/             # Componentes reutilizáveis (ex: botões, cards)
+│   ├── styles/
+│   │   └── globals.css     # Estilizações globais
+│   ├── app/
+│   │   ├── about/
+│   │   │   └── page.tsx    # Página About
+│   │   ├── description/
+│   │   │   └── page.tsx    # Página Description
+│   │   ├── events/
+│   │   │   └── page.tsx    # Página Events
+│   │   ├── footer/
+│   │   │   └── page.tsx    # Se for uma página específica, senão vira um componente
+│   │   ├── home/
+│   │   │   └── page.tsx    # Página Home
+│   │   ├── layout.tsx      # Layout raiz
+│   │   └── page.tsx        # Página principal (root)
+├── README.md               # Documentação do projeto
+└── package.json            # Dependências e scripts do projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+💡 Melhorias Futuras
+ Integração com API de backend para capturar leads
 
-To learn more about Next.js, take a look at the following resources:
+ Validação mais avançada de formulário
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ Adição de seções com depoimentos e benefícios
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ SEO otimizado para redes sociais
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👨‍💻 Autor
+Desenvolvido por Erivelton M.
+📧 Entre em contato pelo GitHub
